@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Contador SessionStorage</h1>
+<p id="resultat"></p>
+
+<script>
+if (sessionStorage.visites) {
+    sessionStorage.visites = Number(sessionStorage.visites) + 1;
+} else {
+    sessionStorage.visites = 1;
+}
+document.getElementById("resultat").innerHTML = "Visites: " . sessionStorage.visites;
+</script>
+</body>
+</html>
