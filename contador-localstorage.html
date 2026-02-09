@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Contador LocalStorage</h1>
+<p id="resultat"></p>
+
+<script>
+if (localStorage.visites) {
+    localStorage.visites = Number(localStorage.visites) + 1;
+} else {
+    localStorage.visites = 1;
+}
+document.getElementById("resultat").innerHTML = "Visites: " . localStorage.visites;
+</script>
+</body>
+</html>
